@@ -1,0 +1,16 @@
+package camp;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Course[] courses = {};
+		
+		System.out.println(courses.length);
+		
+		
+	}
+		
+}
+
+

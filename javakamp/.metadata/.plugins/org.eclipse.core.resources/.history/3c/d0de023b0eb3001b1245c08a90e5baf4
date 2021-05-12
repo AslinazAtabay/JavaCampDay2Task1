@@ -1,0 +1,56 @@
+package camp;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Course course1 = new Course(1,"Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)","Engin Demiroð");
+		
+		
+		Course course2 = new Course(2,"Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)","Engin Demiroð");
+		
+		
+		Course course3 = new Course(3,"Programlamaya Giriþ için Temel Kurs","Engin Demiroð");
+		
+		
+		Course[] courses = {course1,course2,course3};
+		
+		for (Course course : courses) {
+			System.out.println(course.id);
+			System.out.println(course.name);
+			System.out.println(course.instructor);
+			System.out.println(" ");
+			
+		}
+		
+		
+		Day day1 = new Day(1,"Day 1 Info","https://youtu.be/HB0T0hAMk0k","Java dilinde kullanýlan diðer veri tiplerini araþtýrýnýz.","Birinci gün kamp programýmýzý nasýl buldunuz?");
+		
+			
+		Day day2 = new Day(2,"Day 3 Info","https://youtu.be/zwPQsIpTrH8","Özellik nesnesi olarak tanýmladýðýmýzý düþündüðünüz iki örnek veriniz.","Ýkinci gün kamp programýmýzý nasýl buldunuz?");
+		
+		
+		Day day3 = new Day(3,"Day 3 Info","https://youtu.be/v0nc0yesGfk","Aþaðýdaki oynatma listesini 27-39 aralýðýnda izleyiniz.(27-39 Dahil)","Üçüncü gün kamp programýmýzý nasýl buldunuz?");
+		
+		Day[] days = {day1,day2,day3};
+		
+		for (Day day : days) {
+			System.out.println(day.id);
+			System.out.println(day.timetable);
+			System.out.println(day.lectureLink);
+			System.out.println(day.homework);
+			System.out.println(day.rating);
+			System.out.println(" ");
+		
+		
+	}
+		
+	DayManager dayManager = new DayManager();
+	dayManager.addDay(day.id);
+	dayManager.deleteDay();
+	dayManager.editDay();
+	
+		
+	}
+}
+

@@ -1,0 +1,9 @@
+package camp;
+
+public class Day {
+	int id;
+	String timetable;
+	String lectureLink;
+	String homework;
+	String rating;
+}

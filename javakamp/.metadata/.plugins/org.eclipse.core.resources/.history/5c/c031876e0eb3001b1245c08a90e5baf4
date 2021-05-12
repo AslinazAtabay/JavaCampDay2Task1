@@ -1,0 +1,15 @@
+package camp;
+
+public class DayManager {
+	public void addDay(Day day) {
+		System.out.println("Yeni gün ekleme kodu çaðýrýldý." + day.id);
+	}
+	
+	public void deleteDay(Day day) {
+		System.out.println("Gün silme kodu çaðýrýldý." + day.id);
+	}
+
+	public void editDay(Day day) {
+		System.out.println("Gün düzenleme kodu çaðýrýldý" + day.id);
+	}
+}
